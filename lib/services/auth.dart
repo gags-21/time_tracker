@@ -7,9 +7,9 @@ abstract class AuthBase {
   Stream<User> authStateChanges();
   Future<User> signInWithGoogle();
   Future<User> signInAnonymously();
+  Future<User> signInWithFacebook();
   Future<User> signInWithEmailAndPassword(String email, String password);
   Future<User> createUserWithEmailAndPassword(String email, String password);
-  Future<User> signInWithFacebook();
   Future<void> signOut();
 }
 
